@@ -1,1 +1,175 @@
-wedgsfg
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrigada por adquirir os 60 Devocionais!</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #faf8f6;
+      margin: 0;
+      padding: 0;
+      color: #4a3c2a;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(135deg, #e8d7c7, #f3ece7);
+      padding: 40px 20px;
+      border-bottom: 2px solid #e3d2c5;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #5b4636;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #7a6a5c;
+    }
+
+    .bonus-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .bonus-card {
+      background: #fffdfb;
+      border: 1px solid #eadfd5;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 400px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .bonus-card:hover {
+      transform: scale(1.02);
+    }
+
+    .bonus-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .bonus-card h2 {
+      font-size: 1.3rem;
+      color: #5b4636;
+      margin-bottom: 10px;
+    }
+
+    .bonus-card p {
+      font-size: 0.95rem;
+      color: #6f5a49;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .btn-download {
+      background: #d8b89e;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background: #c7a68e;
+    }
+
+    footer {
+      background: #f3ece7;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #7a6a5c;
+    }
+
+    @media (max-width: 600px) {
+      .bonus-card {
+        max-width: 90%;
+      }
+    }
+  </style>
+
+  <!-- Meta Pixel Code (com proteção por cookie - 7 dias) -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  // Inicializa o Pixel
+  fbq('init', '3670504879746623');
+
+  // Sempre registra visualização da página
+  fbq('track', 'PageView');
+
+  // Checa se já enviou conversão nos últimos 7 dias
+  function hasConversionCookie() {
+    return document.cookie.split('; ').some(row => row.startsWith('purchaseSent=true'));
+  }
+
+  // Dispara a conversão uma única vez a cada 7 dias
+  if (!hasConversionCookie()) {
+    fbq('track', 'Purchase', {
+      value: 10.00,
+      currency: 'BRL',
+      content_name: '60 Devocionais Diários para Mulheres Cristãs',
+      event_source: 'bonus_page'
+    });
+    // Cria cookie com validade de 7 dias
+    document.cookie = "purchaseSent=true; max-age=604800; path=/";
+  }
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=3670504879746623&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+  <header>
+    <h1>✨ Obrigada por se permitir viver esse tempo com Deus ✨</h1>
+    <p>Você acaba de receber os <strong>60 Devocionais Diários</strong> e, como presente especial, aqui estão mais 2 bônus exclusivos para fortalecer sua fé!</p>
+  </header>
+
+  <section class="bonus-section">
+
+    <!-- BÔNUS 1 -->
+    <div class="bonus-card">
+      <img src="https://i.ibb.co/1t366BgN/Chat-GPT-Image-8-de-out-de-2025-00-56-07.png" alt="Cartas de Deus para o Coração da Mulher">
+      <h2>Cartas de Deus para o Coração da Mulher</h2>
+      <p>Uma coleção de mensagens inspiradas no amor e na fidelidade de Deus — palavras que confortam, curam e renovam o coração da mulher cristã.</p>
+      <a class="btn-download" href="https://drive.google.com/file/d/1OEBwX_f-6WsOuWSUTiwZcylrvfIOgLhK/view?usp=sharing" target="_blank">📖 Acessar PDF</a>
+    </div>
+
+    <!-- BÔNUS 2 -->
+    <div class="bonus-card">
+      <img src="https://i.ibb.co/TDsfTtFc/Chat-GPT-Image-8-de-out-de-2025-01-10-41.png" alt="Guia de Oração e Escuta - 7 dias de Intimidade com Deus">
+      <h2>Guia de Oração e Escuta — 7 Dias de Intimidade com Deus</h2>
+      <p>Um roteiro de 7 dias de comunhão com o Senhor, com práticas simples e transformadoras para fortalecer sua conexão com Ele.</p>
+      <a class="btn-download" href="https://drive.google.com/file/d/1LAvtr1YIacU-ziLCC5Ou_XpcaGBNPhOU/view?usp=sharing" target="_blank">🙏 Baixar Guia</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 - Todos os direitos reservados | 60 Devocionais para Mulheres Cristãs</p>
+  </footer>
+</body>
+</html>
